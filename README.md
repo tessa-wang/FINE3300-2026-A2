@@ -18,7 +18,7 @@
 2. Download all the files and put them in the same folder.
 3. Open that folder in VS Code (File → Open Folder).
 4. Run `Inflation_Calc.py`. It will ask you for:
-   - the price (just the number, e.g. `1000`). Any number except 0 works, including negatives (which is valid on the BoC website).
+   - the price (just the number, e.g. `1000`). Any number except 0 works, including negatives (same as the BoC website).
    - the first date (e.g. `1995-07`)
    - the second date (e.g. `2026-09`)
 5. It prints the results, then shows the CPI graph.
