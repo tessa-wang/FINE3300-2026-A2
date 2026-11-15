@@ -16,7 +16,7 @@ years = []
 # loop to add date CPI to the lists (skipping the first 9 lines)
 for line in lines[9:]:                         
     cpi_date, cpi = line.split(',') #split line at comma into date and CPI
-    cpi_date = cpi_date.strip(' \n"') # removes spaces, qoutes, and the new line from date
+    cpi_date = cpi_date.strip(' \n"') # removes spaces, quotes, and the new line from date
     cpi = cpi.strip(' \n"') # same for CPI^                             
     dates.append(cpi_date)  # add date to the list  
     cpis.append(float(cpi)) #add CPI to list as a float
@@ -42,7 +42,7 @@ while True:    # loop asking until the price is valid
 # Asking for the two dates
 def get_date(date_specifier):
     while True:
-        user_input_date = input("Enter the " + date_specifier + " date (YYYY-MM): ") # asking for dates
+        user_input_date = input("Enter the " + date_specifier + " date (YYYY-MM): ").strip() # asking for dates
         if user_input_date + '-01' in dates:
             return user_input_date
         print("Invalid date. Use YYYY-MM between", first_date, "and", last_date)
