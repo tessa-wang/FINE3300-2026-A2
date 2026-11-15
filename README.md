@@ -3,7 +3,7 @@
 ### Description
 - FINE 3300, Fall 2026, Assignment 2
 - I made an inflation calculator and a CPI graph in Python, based on the [Bank of Canada Inflation Calculator](https://www.bankofcanada.ca/rates/related/inflation-calculator/).
-- The Bank of Canada calculator only lets you pick a year. Mine lets you pick a month and a year.
+- The Bank of Canada calculator only lets you pick a year. I've enhanced it so you can pick a month and a year.
 
 ### Files
 - `Inflation_Calc.py` - asks for a price and two dates, prints the results, then shows the CPI graph and saves it as `CPI_Graph.png`
@@ -18,7 +18,7 @@
 2. Download all the files and put them in the same folder.
 3. Open that folder in VS Code (File → Open Folder).
 4. Run `Inflation_Calc.py`. It will ask you for:
-   - the price (just the number, e.g. `1000`). Any number except 0 works, including negatives.
+   - the price (just the number, e.g. `1000`). Any number except 0 works, including negatives (which is valid on the BoC website).
    - the first date (e.g. `1995-07`)
    - the second date (e.g. `2026-09`)
 5. It prints the results, then shows the CPI graph.
@@ -55,7 +55,7 @@ CPI for 2026-09: 170.0
 
 **Commentary:**
 
-The CPI (blue line) stays low and flat until around 1970, then rises a lot faster. The dotted line is the base level of 100, which the CPI reaches in 2002.
+The CPI (blue line) stays low and flat until around 1970, then rises quicker faster. The dotted line is the base level of 100, which the CPI reaches in 2002.
 
 Some interesting parts of the annual % change (orange line):
 - During and after WWI (about 1917–1920), inflation spiked to over 20%. Then prices dropped sharply in 1921, to about -18%.
