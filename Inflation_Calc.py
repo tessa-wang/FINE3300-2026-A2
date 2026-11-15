@@ -33,7 +33,7 @@ last_date = dates[-1][0:7] # latest date in the data
 while True:    # loop asking until the price is valid
     try:
         price = float(input("Enter the price: "))  # asking user for price
-        if price != 0: # any number (except 0)
+        if price != 0: # any number except 0 (negatives allowed, same as the BoC calculator)
             break  # valid, so stop asking
     except: # if it wasn't a number, float fails
         pass
